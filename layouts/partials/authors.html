@@ -26,11 +26,7 @@
                                 {{- end -}}
                                 <a href="{{ $term.RelPermalink }}" class="small">{{ .Scratch.Get "name" }}</a>
                             </h5>
-                            {{- with $term.Params.twitter -}}
-                                <p class="social small text-muted">
-                                    <a href="https://twitter.com/@{{ . | urlize }}">@{{ . }}</a>
-                                </p>
-                            {{- end -}}
+                            <h6 class="social small text-muted">Author</h6>
                         </div>
                     </div>
                 </li>
